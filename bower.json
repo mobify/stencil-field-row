@@ -1,0 +1,37 @@
+{
+  "name": "stencil-field-row",
+  "description": "Field Row is responsible for the layout of it's children field components",
+  "authors": [
+    "Mobify"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/mobify/stencil-field-row.git"
+  },
+  "keywords": [
+    "mobify",
+    "components",
+    "patterns"
+  ],
+  "license": "MIT",
+  "main": [
+    "field-row.dust"
+  ],
+  "ignore": [
+    ".editorconfig",
+    ".gitignore",
+    "package.json",
+    "Gruntfile.js",
+    "Gemfile",
+    "Gemfile.lock",
+    "tests"
+  ],
+  "dependencies": {
+    "stencil-variables": "mobify/stencil-variables#*",
+    "level": ">=0.1.0",
+    "spline": "~1.0.1"
+  },
+  "devDependencies": {
+      "stencil-spec": "mobify/stencil-spec#dev"
+  }
+}

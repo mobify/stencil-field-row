@@ -1,0 +1,11 @@
+<style>
+    /* Test-specific fixture styles go here. */
+</style>
+
+{@c-spec for="Field Row Component" repository=repo}
+    {@c-spec__test describe=".c-field-row"}
+        {@c-spec__case expect="Should have feature A"}
+            {@c-field-row /}
+        {/c-spec__case}
+    {/c-spec__test}
+{/c-spec}
