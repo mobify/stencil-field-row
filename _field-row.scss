@@ -15,7 +15,7 @@
     display: flex;
 
     & + & {
-        margin-top: $unit;
+        margin-top: $unit*2;
     }
 
     .c-field + .c-field {
