@@ -1,12 +1,6 @@
 // field-row
 // ===
 
-// Configurable Variables
-// ---
-
-$field-row__variable-name: true !default;
-
-
 // Dependencies
 // ---
 
@@ -14,17 +8,17 @@ $field-row__variable-name: true !default;
 @import 'level/level';
 
 
-// Field Row root
-// ---
+// Field Row
+// ===
 
 .c-field-row {
-    // Your component styles go here
-}
+    display: flex;
 
+    & + & {
+        margin-top: $unit;
+    }
 
-// Field Row sub-component
-// ---
-
-.c-field-row__sub-component {
-    // Your component styles go here
+    .c-field + .c-field {
+        margin-left: $unit;
+    }
 }

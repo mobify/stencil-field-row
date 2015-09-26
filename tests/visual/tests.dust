@@ -4,8 +4,30 @@
 
 {@c-spec for="Field Row Component" repository=repo}
     {@c-spec__test describe=".c-field-row"}
-        {@c-spec__case expect="Should have feature A"}
-            {@c-field-row /}
+        {@c-spec__case expect="Should have space between each field-row"}
+            {@c-field-row}
+                <div class="c-field">
+                    I'm a field
+                </div>
+            {/c-field-row}
+
+            {@c-field-row}
+                <div class="c-field">
+                    I'm a field, and there should be some space above!
+                </div>
+            {/c-field-row}
+        {/c-spec__case}
+
+        {@c-spec__case expect="Should have space between each field inside a field-row"}
+            {@c-field-row}
+                <div class="c-field">
+                    I'm a field
+                </div>
+
+                <div class="c-field">
+                    I'm a field, and there should be some space to the left!
+                </div>
+            {/c-field-row}
         {/c-spec__case}
     {/c-spec__test}
 {/c-spec}
